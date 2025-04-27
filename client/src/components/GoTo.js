@@ -11,6 +11,7 @@ const GoTo = () => {
   return (
     <div className="goto">
       <h1>Welcome to sumin's portfolio</h1>
+      <br></br>
       <button 
         onClick={handleShowMore}
         className="show-more-button"
