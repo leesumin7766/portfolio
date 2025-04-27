@@ -1,16 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
 .goto {
-    height: 100vh;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .goto button {
-    padding: 15px 30px;
-    font-size: 1.5rem;
-    border: none;
-    background-color: white;
-    color: black;
-    cursor: pointer;
-  }
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column; /* 세로 방향으로 정렬 */
+  justify-content: center;
+  align-items: center;
+  font-family: 'Iceland', cursive; /* Iceland 폰트 적용 */
+}
+
+.goto h1 {
+  font-size: 3rem;
+  margin-bottom: 20px; /* h1과 버튼 사이 간격 */
+}
+
+.goto button {
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  border: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border-radius: 12px; /* 모서리를 둥글게 */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.goto button:hover {
+  background-color: black;
+  color: white;
+}

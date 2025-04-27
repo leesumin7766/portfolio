@@ -5,14 +5,20 @@ import "./GoTo.css";
 const GoTo = () => {
   const navigate = useNavigate();
 
-  const goMain = () => {
-    navigate("/Main"); // 페이지 이동
+  const handleShowMore = () => {
+    navigate('/main');
   };
 
   return (
-    <section className="goto" id="goto">
-      <button onClick={goMain}>Go to Main</button>
-    </section>
+    <div className="goto">
+      <h1>Welcome to sumin's portfolio</h1>
+      <button 
+        onClick={handleShowMore}
+        className="show-more-button"
+      >
+        Show more?
+      </button>
+    </div>
   );
 };
 
