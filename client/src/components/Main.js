@@ -1,5 +1,5 @@
 import React from "react";
-import "./Main.css"; // CSS 파일 따로 작성해야 함
+// import "./Main.css"; // CSS 파일 따로 작성해야 함
 import { Link } from "react-scroll"; // 페이지 내부 이동용
 import { motion } from "framer-motion";
 
