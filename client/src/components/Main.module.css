@@ -149,7 +149,7 @@ body, html {
 }
 
 .skillsCard {
-  width: 800px;
+  width: 900px;
   background-color: white;
   padding: 30px;
   margin-bottom: 30px;
@@ -203,26 +203,41 @@ body, html {
 
 .projectCard {
   background-color: white;
-  width: 800px;
+  width: 900px;
   padding: 30px;
-  margin-bottom: 30px;
+  padding-top: 10px;
+  margin-bottom: 40px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* 더 진한 그림자 */
   border-radius: 5px;
   position: relative;
 }
 
 .projectCard h2 {
-  font-size: 3rem;
+  font-size: 3.3rem;
 }
 
 .projectCard h2 span {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: gray;
+}
+
+.tools {
+  font-size: 18px; /* 글씨 크기 */
+  font-weight: bold; /* 굵게 */
+  margin-top: 10px; /* 위쪽 여백 */
+  color: rgb(207, 51, 77); /* 글자 색상 */
+  letter-spacing: 1px; /* 글자 간격 */
+  text-decoration: underline;
 }
 
 .projectCard p {
   font-size: 1.2rem;
-  color: #333;
+  color: rgb(44, 44, 44);
+}
+
+.projectCard p1 {
+  font-size: 1.2rem;
+  color: rgb(207, 51, 77);
 }
 
 .githubLink i {
@@ -254,18 +269,18 @@ body, html {
   object-fit: cover;
   border-radius: 50%; /* 동그랗게 */
   margin-right: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   margin-top: 30px;
 }
 
 .educationItem p {
   font-size: 2rem;
-  color: #333;
+  color: #000000;
 }
 
 .educationItem p span {
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .educationItem eng {
@@ -275,6 +290,21 @@ body, html {
 
 .educationItem kor {
   font-size: 2rem; /* 한글 글씨 크기 */
+  color: gray;
+}
+
+.education .dateTime {
+  font-size: 1.5rem; /* 글씨 크기 설정 */
+  color: rgb(207, 51, 77);
+  margin-top: 5px;
+  letter-spacing: 0.05em;  /* 글자 사이의 간격 설정 */
+}
+
+.education .eduText {
+  font-size: 1.5rem; /* 글씨 크기 설정 */
+  color: #333;
+  margin-top: 5px;
+  letter-spacing: 0.05em;  /* 글자 사이의 간격 설정 */
 }
 
 /* Certificate 섹션 */

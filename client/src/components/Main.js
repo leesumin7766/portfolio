@@ -91,16 +91,22 @@ const Main = () => {
   <h1>Projects</h1>
 
   <div className={styles.projectCard}>
-    <h2>Bible <span>(25.02.03~25.02.14)</span></h2>
-    <p>온라인 도서 대여 서비스</p>
+    <h2>Bible <span>온라인 도서관 서비스</span> <span>(25.02.03~25.02.14)</span></h2>
+    <p>도서 추천 시스템 구축</p>
+    <p className={styles.tools}>Tools</p> 
+    <p1>Spring 3.4.1 / mybatis 3.0.4 / OracleDB 21 / vue.js 3.0 / JUNIT 5 / Tomcat 10.1 / git / flask 3.0.3 / LightFM</p1>
+    <p></p>
     <a href="https://github.com/hyeran0920/Bible" target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
       <i className="bi bi-github"></i>
     </a>
   </div>
 
   <div className={styles.projectCard}>
-    <h2>milgam <span>(24.06.17~24.07.26)</span></h2>
-    <p>AI를 활용한 인파밀집 및 이상행동 검출 서비스</p>
+    <h2>milgam <span>AI를 활용한 인파밀집 및 이상행동 검출 서비스</span> <span>(24.06.17~24.07.26)</span></h2>
+    <p>회원 관리자 로그인 개발</p>
+    <p className={styles.tools}>Tools</p> 
+    <p1>Spring 2.7.3 / java 11 / gradle / PostgreSQL / supabase 2.5.3 / flask 3.0.3 / numpy 1.26.4 / opencv 4.10.0</p1>
+    <p></p>
     <a href="https://github.com/K-Saaan/milgam" target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
       <i className="bi bi-github"></i>
     </a>
@@ -115,7 +121,9 @@ const Main = () => {
     <img src="/assets/screen5.png" alt="KOSA Logo" />
     <p>
       <span className={styles.eng}>kosa java</span> 
-      <span className={styles.kor}>개발자 양성 과정</span>
+      <span className={styles.kor}>개발자 양성 과정 수료</span>
+      <p className={styles.dateTime}>(2024.12.02 - 2025.02.28) <strong>480Hours</strong></p>
+      <p className={styles.eduText}>- Java, Js, OracleDB 교육 및 프로젝트</p>
     </p>
   </div>
 
@@ -123,6 +131,10 @@ const Main = () => {
     <img src="/assets/screen4.png" alt="TTA Logo" />
     <p>
       <span className={styles.kor}>한국정보통신기술협회(TTA) 주관 인턴십</span>
+      <p className={styles.dateTime}>(2024.10.21 - 2024.11.27) <strong>2months</strong></p>
+      <p className={styles.eduText}>IT 제품 품질테스트 SQA업무</p><p className={styles.eduText}>
+VMware를 활용한 윈도우와 리눅스 서버 간의 애플리케이션 연동 테스트를 진행</p><p className={styles.eduText}>
+젠데스크 환경에서 html5과 css를 활용하여 제품 헬프 데스크 UI 개선 업무를 진행</p>
     </p>
   </div>
 
@@ -130,7 +142,9 @@ const Main = () => {
     <img src="/assets/screen3.png" alt="KT Aivle Logo" />
     <p>
       <span className={styles.eng}>KT Aivle School AI</span> 
-      <span className={styles.kor}>개발자 5기</span>
+      <span className={styles.kor}>개발자 5기 수료</span>
+      <p className={styles.dateTime}>(2024.02.20 - 2024.08.07) <strong>840Hours</strong></p>
+      <p className={styles.eduText}>- 인공지능, 데이터분석 교육 및 프로젝트</p>
     </p>
   </div>
 </section>
