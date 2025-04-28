@@ -1,6 +1,8 @@
 // pages/_app.js
-import '../components/GoTo.css';  // GoTo.css 올바른 경로
-import '../components/Main.css';  // Main.css 올바른 경로
+import '../components/GoTo.module.css';  
+import '../components/Main.module.css';  
+// import '../styles/globals.css'; 
+import useSWR from 'swr'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;

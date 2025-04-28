@@ -4,7 +4,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import GoTo from "./components/GoTo";
 import Main from "./components/Main";
-import ThankYou from './components/ThankYou';
+// import ThankYou from './components/ThankYou';
 
 function App() {
   return (

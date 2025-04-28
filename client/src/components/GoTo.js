@@ -1,20 +1,21 @@
 import React from "react";
-import { useRouter } from "next/router"; // Next.js에서는 next/router 사용
+import { useRouter } from "next/router";
+import styles from "../components/GoTo.module.css"; // CSS 모듈로 import
 
 const GoTo = () => {
-  const router = useRouter(); // useRouter()로 변경
+  const router = useRouter();
 
   const handleShowMore = () => {
-    router.push('/main'); // next.js에서 페이지 이동은 router.push 사용
+    router.push('/main');
   };
 
   return (
-    <div className="goto">
+    <div className={styles.goto}>  {/* styles.goto로 변경 */}
       <h1>Welcome to sumin's portfolio</h1>
-      <br></br>
+      <br />
       <button 
         onClick={handleShowMore}
-        className="show-more-button"
+        className={styles["show-more-button"]}  // styles.show-more-button으로 변경 
       >
         Show more?
       </button>
