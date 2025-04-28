@@ -42,7 +42,7 @@ body, html {
   margin-top: 30px;
 }
 .navRight {
-  padding-left: 1300px;
+  padding-left: 1200px;
 }
 .navMenu {
   color: black;
@@ -153,7 +153,7 @@ body, html {
   background-color: white;
   padding: 30px;
   margin-bottom: 30px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* 더 진한 그림자 */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 1); /* 더 진한 그림자 */
   border-radius: 5px;
 }
 
@@ -168,11 +168,11 @@ body, html {
 }
 .skillsList {
   list-style: none;
-  padding: 0;
+  margin : 1.5rem;
 }
 
-.skillCategory {
-  margin-bottom: 1rem;
+.skillCategory1 {
+  margin-bottom: 3rem;
   font-size: 1.1rem;
 }
 
@@ -182,9 +182,67 @@ body, html {
   padding: 3px;
 }
 
-.skillItem {
-  margin: 0 0.3rem;
-  font-weight: normal;
+.categoryFront {
+  font-weight: bold;
+  margin-right: 3rem;
+  padding: 3px;
+  color: blue;
+  padding-bottom :0.5rem;
+  display: inline-block;
+  width: 150px;
+}
+
+.categoryBack {
+  font-weight: bold;
+  margin-right: 3rem;
+  padding: 3px;
+  color: green;
+  padding-bottom :0.5rem;
+  display: inline-block;
+  width: 150px;
+}
+
+.categoryDatabase {
+  font-weight: bold;
+  margin-right: 3rem;
+  padding: 3px;
+  color: red;
+  padding-bottom :0.5rem;
+  display: inline-block;
+  width: 160px;
+}
+
+.categoryOthers {
+  font-weight: bold;
+  margin-right: 3rem;
+  padding: 3px;
+  color: black;
+  display: inline-block;
+  width: 150px;
+}
+
+.skillCategory1 .skillItem {
+  font-weight: bold;
+  margin-right: 1rem;
+  color: blue;
+}
+
+.skillCategory2 .skillItem {
+  font-weight: bold;
+  margin-right: 1rem;
+  color: green;
+}
+
+.skillCategory3 .skillItem {
+  font-weight: bold;
+  margin-right: 1rem;
+  color: red;
+}
+
+.skillCategory4 .skillItem {
+  font-weight: bold;
+  margin-right: 1rem;
+  color: black;
 }
 
 /* Projects 섹션 */
@@ -207,7 +265,7 @@ body, html {
   padding: 30px;
   padding-top: 10px;
   margin-bottom: 40px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* 더 진한 그림자 */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 1); /* 더 진한 그림자 */
   border-radius: 5px;
   position: relative;
 }
@@ -221,13 +279,19 @@ body, html {
   color: gray;
 }
 
-.tools {
+.projectCard .tools {
+  font-size: 23px; /* 글씨 크기 */
+  font-weight: bold; /* 굵게 */
+  margin-top: 10px; /* 위쪽 여백 */
+  color: #5bca57; /* 글자 색상 */
+  text-decoration: underline;
+}
+.projectCard .projecttools {
   font-size: 18px; /* 글씨 크기 */
   font-weight: bold; /* 굵게 */
   margin-top: 10px; /* 위쪽 여백 */
-  color: rgb(207, 51, 77); /* 글자 색상 */
+  color: #5bca57; /* 글자 색상 */
   letter-spacing: 1px; /* 글자 간격 */
-  text-decoration: underline;
 }
 
 .projectCard p {
@@ -283,14 +347,14 @@ body, html {
   font-size: 2rem;
 }
 
-.educationItem eng {
+.educationItem .eng {
   font-size: 2rem; /* 영어 글씨 크기 */
   font-weight: bold; /* (선택) 영어 부분 강조 */
 }
 
-.educationItem kor {
+.educationItem .kor {
   font-size: 2rem; /* 한글 글씨 크기 */
-  color: gray;
+  font-weight: bold;
 }
 
 .education .dateTime {
@@ -311,45 +375,85 @@ body, html {
 .certificate {
   padding-left: 410px; /* About Me의 왼쪽 간격 맞추기 */
   background-color: #d9d9d9;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
+}
+.certificateCard{
+  background-color: rgb(59, 211, 165);
+  width: 900px;
+  padding: 30px;
+  padding-top: 20px;
+  margin-bottom: 35px;
+  border-radius: 5px;
+  position: relative;
+  color : white;
 }
 
+.titleWrapper {
+  display: flex;
+  align-items: center; /* 세로 중앙 정렬 */
+  gap: 200px; /* h2와 아이콘 사이 간격 */
+}
+.titleWrapper2 {
+  display: flex;
+  align-items: center; /* 세로 중앙 정렬 */
+  gap: 305px; /* h2와 아이콘 사이 간격 */
+}
+.titleWrapper3 {
+  display: flex;
+  align-items: center; /* 세로 중앙 정렬 */
+  gap: 425px; /* h2와 아이콘 사이 간격 */
+}
+.iconWrapper .number{
+  font-size: 3rem;
+  color: #ecfd00;
+  position: relative;
+  top: -3px;
+}
+.icon {
+  font-size: 50px;
+  color: #ecfd00; /* 원하는 색깔 */
+}
 .certificate h1 {
   font-size: 4rem;
   margin-bottom: 30px;
 }
 
-.certificateItem {
-  margin-bottom: 50px;
-}
-
-.certificateItem h2 {
+.certificateCard h2 {
   font-size: 1.5rem;
-  text-decoration: underline; /* 제목 밑줄 */
   margin-bottom: 10px;
 }
 
-.certificateItem p {
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 5px;
+.certificateCard p {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 20px;
 }
 
-.certificateItem a {
-  font-size: 1rem;
-  color: blue;
+.certificateCard a {
+  font-size: 1.3rem;
+  color: #D9D9D9;
   text-decoration: underline;
+  padding-top: 10px;
+}
+
+.certificateCard .highlight {
+  color: #ecfd00;
+  font-weight: bold;
 }
 
 .thankYouSection {
-  background-image: url('/assets/screen1.png');
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   height: 60vh;
   color: white;
   position: relative;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 150px;
+}
+
+.thankYouSection .thankText {
+  position: relative;    /* 상대적 위치 지정 */
+  top: -50px;   
 }
 
 .messageTitle {
@@ -364,6 +468,8 @@ body, html {
 }
 
 .thankYouLetters {
+  position: relative;    /* 상대적 위치 지정 */
+  top: 50px;   
   display: flex;
   justify-content: center;
   align-items: center;
@@ -380,7 +486,7 @@ body, html {
   position: absolute;
   bottom: 30px;
   width: 100%;
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   color: black;
   text-align: center;
 }
@@ -400,7 +506,7 @@ body, html {
   }
 
   .footer {
-    font-size: 0.8rem;
+    font-size: 1.5rem;
   }
 }
 

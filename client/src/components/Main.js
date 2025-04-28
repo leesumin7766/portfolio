@@ -21,7 +21,8 @@ const Main = () => {
             <Link to="skills" smooth={true} duration={500}>Skills</Link>
             <Link to="projects" smooth={true} duration={500}>Projects</Link>
             <Link to="education" smooth={true} duration={500}>Education</Link>
-            <Link to="certificate" smooth={true} duration={500}>Certificate</Link>
+            <Link to="certificate" smooth={true} duration={500}>Awards</Link>
+            <Link to="certificate" smooth={true} duration={500}>certificate</Link>
           </nav>
         </div>
       </header>
@@ -53,34 +54,35 @@ const Main = () => {
         <h1>SKILLS</h1>
         <div className={styles.skillsCard}>
           <ul className={styles.skillsList}>
-              <li className={styles.skillCategory}>
-              💻 <span className={styles.categoryTitle}>Front-end</span> 
-                  <span className={styles.skillItem}>Vue.js</span>/
-                  <span className={styles.skillItem}>React</span>/
+              <li className={styles.skillCategory1}>
+              💻 <span className={styles.categoryFront}>Front-end</span> 
+                  <span className={styles.skillItem}>Vue.js</span>
+                  <span className={styles.skillItem}>React</span>
                   <span className={styles.skillItem}>Next.js</span>
               </li>
 
-          <li className={styles.skillCategory}>
-              🛠️ <span className={styles.categoryTitle}>Back-end</span> 
-                  <span className={styles.skillItem}>Python</span>/
-                  <span className={styles.skillItem}>Java</span>/
-                  <span className={styles.skillItem}>Spring</span>/
-                  <span className={styles.skillItem}>Flask</span>/
-        <span className={styles.skillItem}>JPA</span>/
+          <li className={styles.skillCategory2}>
+              🛠️ <span className={styles.categoryBack}>Back-end</span> 
+                  <span className={styles.skillItem}>Python</span>
+                  <span className={styles.skillItem}>Java</span>
+                  <span className={styles.skillItem}>Spring</span>
+                  <span className={styles.skillItem}>Flask</span>
+        <span className={styles.skillItem}>JPA</span>
         <span className={styles.skillItem}>MyBatis</span>
       </li>
 
-      <li className={styles.skillCategory}>
-        🗄️ <span className={styles.categoryTitle}>Database</span> 
-        <span className={styles.skillItem}>Oracle DB</span>/
+      <li className={styles.skillCategory3}>
+        🗄️ <span className={styles.categoryDatabase}>Database</span> 
+        <span className={styles.skillItem}>Oracle DB</span>
         <span className={styles.skillItem}>PostgreSQL</span>
       </li>
 
-      <li className={styles.skillCategory}>
-        ⚙️ <span className={styles.categoryTitle}>Others</span> 
-        <span className={styles.skillItem}>Git</span>/
-        <span className={styles.skillItem}>PyTorch</span>/
+      <li className={styles.skillCategory4}>
+        ⚙️ <span className={styles.categoryOthers}>Others</span> 
+        <span className={styles.skillItem}>Git</span>
+        <span className={styles.skillItem}>PyTorch</span>
         <span className={styles.skillItem}>Pandas</span>
+        <span className={styles.skillItem}>Jira</span>
       </li>
     </ul>
   </div>
@@ -92,9 +94,9 @@ const Main = () => {
 
   <div className={styles.projectCard}>
     <h2>Bible <span>온라인 도서관 서비스</span> <span>(25.02.03~25.02.14)</span></h2>
-    <p>도서 추천 시스템 구축</p>
-    <p className={styles.tools}>Tools</p> 
-    <p1>Spring 3.4.1 / mybatis 3.0.4 / OracleDB 21 / vue.js 3.0 / JUNIT 5 / Tomcat 10.1 / git / flask 3.0.3 / LightFM</p1>
+    <p>도서 추천 시스템 풀스택 개발</p>
+    <p className={styles.tools}><i class="bi bi-tools"></i> Tools</p> 
+    <p className={styles.projecttools}>Spring 3.4.1 / mybatis 3.0.4 / OracleDB 21 / vue.js 3.0 / JUNIT 5 / Tomcat 10.1 / git / flask 3.0.3 / LightFM</p>
     <p></p>
     <a href="https://github.com/hyeran0920/Bible" target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
       <i className="bi bi-github"></i>
@@ -103,9 +105,9 @@ const Main = () => {
 
   <div className={styles.projectCard}>
     <h2>milgam <span>AI를 활용한 인파밀집 및 이상행동 검출 서비스</span> <span>(24.06.17~24.07.26)</span></h2>
-    <p>회원 관리자 로그인 개발</p>
-    <p className={styles.tools}>Tools</p> 
-    <p1>Spring 2.7.3 / java 11 / gradle / PostgreSQL / supabase 2.5.3 / flask 3.0.3 / numpy 1.26.4 / opencv 4.10.0</p1>
+    <p>회원 관리자 로그인 백엔드 개발</p>
+    <p className={styles.tools}><i class="bi bi-tools"></i> Tools</p> 
+    <p className={styles.projecttools}>Spring 2.7.3 / java 11 / gradle / PostgreSQL / supabase 2.5.3 / flask 3.0.3 / numpy 1.26.4 / opencv 4.10.0</p>
     <p></p>
     <a href="https://github.com/K-Saaan/milgam" target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
       <i className="bi bi-github"></i>
@@ -119,89 +121,122 @@ const Main = () => {
 
   <div className={styles.educationItem}>
     <img src="/assets/screen5.png" alt="KOSA Logo" />
-    <p>
+    <div>
       <span className={styles.eng}>kosa java</span> 
       <span className={styles.kor}>개발자 양성 과정 수료</span>
       <p className={styles.dateTime}>(2024.12.02 - 2025.02.28) <strong>480Hours</strong></p>
       <p className={styles.eduText}>- Java, Js, OracleDB 교육 및 프로젝트</p>
-    </p>
+    </div>
   </div>
 
   <div className={styles.educationItem}>
     <img src="/assets/screen4.png" alt="TTA Logo" />
-    <p>
+    <div>
       <span className={styles.kor}>한국정보통신기술협회(TTA) 주관 인턴십</span>
       <p className={styles.dateTime}>(2024.10.21 - 2024.11.27) <strong>2months</strong></p>
-      <p className={styles.eduText}>IT 제품 품질테스트 SQA업무</p><p className={styles.eduText}>
-VMware를 활용한 윈도우와 리눅스 서버 간의 애플리케이션 연동 테스트를 진행</p><p className={styles.eduText}>
-젠데스크 환경에서 html5과 css를 활용하여 제품 헬프 데스크 UI 개선 업무를 진행</p>
-    </p>
+      <p className={styles.eduText}>IT 제품 품질테스트 SQA업무</p>
+      <p className={styles.eduText}>VMware를 활용한 윈도우와 리눅스 서버 간의 애플리케이션 연동 테스트를 진행</p>
+      <p className={styles.eduText}>젠데스크 환경에서 HTML5와 CSS를 활용하여 제품 헬프 데스크 UI 개선 업무를 진행</p>
+    </div>
   </div>
 
   <div className={styles.educationItem}>
     <img src="/assets/screen3.png" alt="KT Aivle Logo" />
-    <p>
+    <div>
       <span className={styles.eng}>KT Aivle School AI</span> 
       <span className={styles.kor}>개발자 5기 수료</span>
       <p className={styles.dateTime}>(2024.02.20 - 2024.08.07) <strong>840Hours</strong></p>
       <p className={styles.eduText}>- 인공지능, 데이터분석 교육 및 프로젝트</p>
-    </p>
+    </div>
   </div>
 </section>
 
       <section className={styles.certificate} id="certificate">
-        <h1>Certificate</h1>
+        <h1>Awards</h1>
 
-        <div className={styles.certificateItem}>
+        <div className={styles.certificateCard}>
+          <div className={styles.titleWrapper}>
           <h2>숭실대 x 코드스테이츠 코딩 경진 대회 우수상</h2>
+          <div className={styles.iconWrapper}>
+            <ion-icon name="trophy-outline" className={styles.icon}></ion-icon>
+            <span className={styles.number}> 3rd</span>
+          </div>
+          </div>
           <p>(2024.08.31)</p>
-          <p>SSU x codestates Coding Competition 3rd</p>
+          <p>Leader</p>
+          <p>SSU x codestates Coding Competition <span className="highlight">3rd</span></p>
           <a href="https://www.notion.so/AI-SW-Developer-4ac029b6100580c1be86f23070f01941?pvs=4#1ac029b6100580229cb0f764a39d3259" target="_blank" rel="noopener noreferrer">
-            인증 링크
+          Aceess Link
           </a>
         </div>
 
-        <div className={styles.certificateItem}>
+        <div className={styles.certificateCard}>
+        <div className={styles.titleWrapper2}>
           <h2>KT Aivle School 빅프로젝트 최우수상</h2>
+          <div className={styles.iconWrapper}>
+            <ion-icon name="trophy-outline" className={styles.icon}></ion-icon>
+            <span className={styles.number}> 2rd</span>
+          </div>
+          </div>
           <p>(2024.08.07)</p>
-          <p>KT Aivle School Big Project 2nd / 32 teams</p>
+          <p>Teammate</p>
+          <p>KT Aivle School Big Project <span className="highlight">2nd / 32 teams</span></p>
         </div>
 
-        <div className={styles.certificateItem}>
-          <h2>KT Aivle School 코딩 마스터즈 1차 마스터</h2>
+        <div className={styles.certificateCard}>
+        <div className={styles.titleWrapper3}>
+          <h2>KT 코딩마스터즈 마스터</h2>
+            <div className={styles.iconWrapper}>
+              <ion-icon name="trophy-outline" className={styles.icon}></ion-icon>
+              <span className={styles.number}> TOP 8%</span>
+            </div>
+          </div>
           <p>(2024.03.31)</p>
-          <p>KT Aivle School Coding Masters Top 8%</p>
+          <p>Solo</p>
+          <p>KT Aivle School Coding Masters <span className="highlight">Top 8%</span></p>
           <a href="https://www.openbadge-global.com/api/v1.0/openBadge/e/v2/Wallet/Public/GetAssertionShare/qkw1eHvrUEQzdE5DNG5SQTNsRWIWZz09" target="_blank" rel="noopener noreferrer">
-            인증 링크
+            Aceess Link
           </a>
         </div>
       </section>
 
-      <section className={styles.thankYouSection} id="thankyou">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 2 }}
-      >
-        <h1 className={styles.messageTitle}>찾아봐주셔서 정말 감사합니다</h1>
-        <br></br>
-        <h2 className={styles.messageSubtitle}>앞으로가 기대되는 개발자가 되겠습니다</h2>
-      </motion.div>
+      <section className={styles.thankYouSection} style={{ backgroundImage: "url('/assets/screen1.png'), linear-gradient(rgba(25, 0, 255, 0.05), rgba(25, 0, 255, 0.05))",
+        backgroundBlendMode: "darken",
+       }}>
+      <div className={styles.thankText}>
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}  // 처음에는 안 보이고, 아래로 내려온 상태
+          whileInView={{ opacity: 1, y: 0 }} // 50% 이상 보일 때 애니메이션이 시작되어 부드럽게 올라가고 보임
+          viewport={{ once: false, amount: 0.5 }}  // 50% 이상 보였을 때 애니메이션이 시작됨
+          transition={{ duration: 1, ease: "easeOut" }}  // 1.5초 동안 부드럽게 나타나도록 설정
+          className={styles.messageTitle}
+        >
+  찾아봐주셔서 정말 감사합니다
+</motion.div>
 
-      <div className={styles.thankYouLetters}>
-        {letters.map((letter, index) => (
-          <motion.span
-            key={index}
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 2 + index * 0.2 }} // 2초 후부터 순차적으로
-            className={styles.letter}
-          >
-            {letter}
-          </motion.span>
-        ))}
-      </div>
-
+<motion.div
+  initial={{ opacity: 0, y: 50 }}  // 처음에는 안 보이고, 아래로 내려온 상태
+  whileInView={{ opacity: 1, y: 0 }} // 50% 이상 보일 때 애니메이션이 시작되어 부드럽게 올라가고 보임
+  viewport={{ once: false, amount: 0.5 }}  // 50% 이상 보였을 때 애니메이션이 시작됨
+  transition={{ duration: 1.5, ease: "easeOut" }}  // 1.5초 동안 부드럽게 나타나도록 설정
+  className={styles.messageSubtitle}
+>
+  미래를 기대하게 만드는 개발자가 되겠습니다
+</motion.div>
+</div>
+<div className={styles.thankYouLetters}>
+  {letters.map((letter, index) => (
+    <motion.span
+      key={index}
+      initial={{ opacity: 0, y: 50 }}   // 각 글자가 처음에 조금 아래에 위치
+      animate={{ opacity: 1, y: 0 }}    // 애니메이션 시 위로 올라오며 보이게 됨
+      transition={{ delay: 2 + index * 0.2, duration: 1.5, ease: "easeOut" }} // 순차적으로 등장, 1.5초 동안
+      className={styles.letter}
+    >
+      {letter}
+    </motion.span>
+  ))}
+</div>
       <footer className={styles.footer}>
         2025. Lee Sumin. All rights reserved. <br />
         made by React

@@ -7,7 +7,7 @@ export default function ThankYou() {
     <section
       className="thank-you-section"
       style={{
-        backgroundImage: "url('/assets/screen1.png')",
+        backgroundImage: "url('/assets/screen1.png'), linear-gradient(rgba(25, 0, 255, 0.05), rgba(25, 0, 255, 0.05))",
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "100vh",
