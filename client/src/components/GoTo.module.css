@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
-
+@font-face {
+  font-family: 'Iceland';
+  src: url('./fonts/Iceland-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 .goto {
   min-height: 98vh;
   background-color: black;
