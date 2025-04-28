@@ -7,6 +7,7 @@ body, html {
   font-family: 'Iceland', sans-serif;
   scroll-behavior: smooth;
   background-color: #D9D9D9;
+  height: 100%; 
 }
 
 /* 헤더 */

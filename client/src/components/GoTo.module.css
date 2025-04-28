@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
 
 .goto {
-  height: 100vh;
+  min-height: 98vh;
   background-color: black;
   color: #D9D9D9;
   display: flex;
@@ -18,13 +18,14 @@
 
 .goto button {
   padding: 15px 30px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   border: none;
   background-color: white;
   color: black;
   cursor: pointer;
   border-radius: 12px; /* 모서리를 둥글게 */
   transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Iceland', cursive;
 }
 
 .goto button:hover {

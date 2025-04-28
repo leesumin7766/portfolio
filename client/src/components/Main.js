@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-scroll"; // 페이지 내부 이동용
 import { motion } from "framer-motion";
 import styles from "../components/Main.module.css"; // CSS 모듈로 import
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const Main = () => {
   const letters = "THANK YOU".split("");
@@ -11,7 +12,7 @@ const Main = () => {
       {/* Header */}
       <header className={styles.header}>
         <div className={styles.navLeft}>
-          <a href="https://your-link.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.notion.so/AI-SW-Developer-1ac029b6100580c1be86f2307f081941#1ac029b6100580229cb0f764a39d3259" target="_blank" rel="noopener noreferrer">
             <img src="/assets/notion-icon.png" alt="Notion" className={styles.notionIcon} />
           </a>
         </div>
@@ -26,7 +27,7 @@ const Main = () => {
       </header>
 
       {/* Main Background */}
-      <section className={styles.intro} style={{ backgroundImage: "url('/assets/screen1.png')" }}>
+      <section className={styles.intro} style={{ backgroundImage: "url('/assets/screen1.png'), linear-gradient(rgba(25, 0, 255, 0.05), rgba(25, 0, 255, 0.05))" }}>
         <div className={styles.introText}>
           <h1>Introduction</h1>
           <h2>안녕하세요<br /><strong>백엔드 개발자 이수민</strong>입니다.</h2>
@@ -39,13 +40,9 @@ const Main = () => {
         <div className={styles.aboutLeft}>
           <h1>ABOUT ME</h1>
           <ul>
-            <li>👤 Lee sumin<br />✉️ hojun7766@naver.com</li>
-            <li>🎂 98.05.10<br />🏫 인천대학교 정보통신공학과</li>
+            <li>👤 LEE SUMIN  ✉️ hojun7766@naver.com</li>
+            <li>🎂 98.05.10  🏫 <span className={styles.koreanFont}>인천대학교 정보통신공학과</span></li>
           </ul>
-          <div className={styles.scrollDown}>
-            <i className="bi bi-arrow-down-circle-fill"></i>
-            <button>Scroll</button>
-          </div>
         </div>
         <div className={styles.aboutRight}>
           <img src="/assets/screen2.png" alt="Profile" className={styles.profileImage} />
@@ -55,55 +52,88 @@ const Main = () => {
       <section className={styles.skills} id="skills">
         <h1>SKILLS</h1>
         <div className={styles.skillsCard}>
-          <ul>
-            <li>💻 Language</li>
-            <li>💻 Front-end</li>
-            <ul>
-              <li>Back-end</li>
-              <li>Language</li>
-            </ul>
-          </ul>
-        </div>
-      </section>
+          <ul className={styles.skillsList}>
+              <li className={styles.skillCategory}>
+              💻 <span className={styles.categoryTitle}>Front-end</span> 
+                  <span className={styles.skillItem}>Vue.js</span>/
+                  <span className={styles.skillItem}>React</span>/
+                  <span className={styles.skillItem}>Next.js</span>
+              </li>
 
-      <section className={styles.projects} id="projects">
-        <h1>Projects</h1>
+          <li className={styles.skillCategory}>
+              🛠️ <span className={styles.categoryTitle}>Back-end</span> 
+                  <span className={styles.skillItem}>Python</span>/
+                  <span className={styles.skillItem}>Java</span>/
+                  <span className={styles.skillItem}>Spring</span>/
+                  <span className={styles.skillItem}>Flask</span>/
+        <span className={styles.skillItem}>JPA</span>/
+        <span className={styles.skillItem}>MyBatis</span>
+      </li>
 
-        <div className={styles.projectCard}>
-          <h2>Bible <span>(25.02.03~25.02.14)</span></h2>
-          <p>온라인 도서 대여 서비스</p>
-          <a href="https://github.com/your-bible-link" target="_blank" rel="noopener noreferrer">
-            <i className="github-icon">ss</i>
-          </a>
-        </div>
+      <li className={styles.skillCategory}>
+        🗄️ <span className={styles.categoryTitle}>Database</span> 
+        <span className={styles.skillItem}>Oracle DB</span>/
+        <span className={styles.skillItem}>PostgreSQL</span>
+      </li>
 
-        <div className={styles.projectCard}>
-          <h2>milgam <span>(24.06.17~24.07.26)</span></h2>
-          <p>머를 활용한 인파밀집 및 이상행동 검출 서비스</p>
-          <a href="https://github.com/your-milgam-link" target="_blank" rel="noopener noreferrer">
-            <i className="github-icon">ss</i>
-          </a>
-        </div>
-      </section>
+      <li className={styles.skillCategory}>
+        ⚙️ <span className={styles.categoryTitle}>Others</span> 
+        <span className={styles.skillItem}>Git</span>/
+        <span className={styles.skillItem}>PyTorch</span>/
+        <span className={styles.skillItem}>Pandas</span>
+      </li>
+    </ul>
+  </div>
+</section>
 
-      <section className={styles.education} id="education">
-        <h1>Education</h1>
 
-        <div className={styles.educationItem}>
-          <img src="/assets/screen5.png" alt="KOSA Logo" />
-          <p><span>kosa java</span> 개발자 양성 과정</p>
-        </div>
+<section className={styles.projects} id="projects">
+  <h1>Projects</h1>
 
-        <div className={styles.educationItem}>
-          <img src="/assets/screen4.png" alt="TTA Logo" />
-          <p>한국정보통신기술협회(TTA) 주관 인턴십</p>
-        </div>
+  <div className={styles.projectCard}>
+    <h2>Bible <span>(25.02.03~25.02.14)</span></h2>
+    <p>온라인 도서 대여 서비스</p>
+    <a href="https://github.com/hyeran0920/Bible" target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
+      <i className="bi bi-github"></i>
+    </a>
+  </div>
 
-        <div className={styles.educationItem}>
-          <img src="/assets/screen3.png" alt="KT Aivle Logo" />
-          <p><span>KT Aivle School AI</span> 개발자 5기</p>
-        </div>
-      </section>
+  <div className={styles.projectCard}>
+    <h2>milgam <span>(24.06.17~24.07.26)</span></h2>
+    <p>AI를 활용한 인파밀집 및 이상행동 검출 서비스</p>
+    <a href="https://github.com/K-Saaan/milgam" target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
+      <i className="bi bi-github"></i>
+    </a>
+  </div>
+</section>
+
+      
+<section className={styles.education} id="education">
+  <h1>Education</h1>
+
+  <div className={styles.educationItem}>
+    <img src="/assets/screen5.png" alt="KOSA Logo" />
+    <p>
+      <span className={styles.eng}>kosa java</span> 
+      <span className={styles.kor}>개발자 양성 과정</span>
+    </p>
+  </div>
+
+  <div className={styles.educationItem}>
+    <img src="/assets/screen4.png" alt="TTA Logo" />
+    <p>
+      <span className={styles.kor}>한국정보통신기술협회(TTA) 주관 인턴십</span>
+    </p>
+  </div>
+
+  <div className={styles.educationItem}>
+    <img src="/assets/screen3.png" alt="KT Aivle Logo" />
+    <p>
+      <span className={styles.eng}>KT Aivle School AI</span> 
+      <span className={styles.kor}>개발자 5기</span>
+    </p>
+  </div>
+</section>
 
       <section className={styles.certificate} id="certificate">
         <h1>Certificate</h1>
@@ -140,6 +170,7 @@ const Main = () => {
         transition={{ duration: 2 }}
       >
         <h1 className={styles.messageTitle}>찾아봐주셔서 정말 감사합니다</h1>
+        <br></br>
         <h2 className={styles.messageSubtitle}>앞으로가 기대되는 개발자가 되겠습니다</h2>
       </motion.div>
 
