@@ -28,11 +28,17 @@ const Main = () => {
       </header>
 
       {/* Main Background */}
-      <section className={styles.intro} style={{ backgroundImage: "url('/assets/screen1.png'), linear-gradient(rgba(25, 0, 255, 0.05), rgba(25, 0, 255, 0.05))" }}>
+      <section className={styles.intro} style={{ backgroundImage: "url('/assets/screen1.png'), linear-gradient(rgba(0, 0, 255, 0.05), rgba(0, 0, 255, 0.05))",
+        backgroundBlendMode: "darken",
+       }}>
         <div className={styles.introText}>
           <h1>Introduction</h1>
-          <h2>안녕하세요<br /><strong>백엔드 개발자 이수민</strong>입니다.</h2>
-          <p>미래의 산업이 필요로 하는 엔지니어가 되려고 노력합니다.</p>
+          <h2>안녕하세요<br/>백엔드 개발자 <span className={styles.highlightName}>이수민</span>입니다</h2><p></p>
+          <div className ={styles.introP}>
+          <h4>다양한 툴을 능숙하게 다루는 개발자를 목표로 성장하고 있습니다<br></br>
+            AI에 대한 깊은 관심을 바탕으로 데이터 분석과 머신러닝 기술을 프로젝트에 적용해왔습니다<br></br>
+          끊임없는 도전과 협업을 통해 다양한 프로젝트를 경험하며 성취감을 얻습니다</h4>
+          </div>
         </div>
       </section>
 
@@ -146,7 +152,7 @@ const Main = () => {
       <span className={styles.eng}>KT Aivle School AI</span> 
       <span className={styles.kor}>개발자 5기 수료</span>
       <p className={styles.dateTime}>(2024.02.20 - 2024.08.07) <strong>840Hours</strong></p>
-      <p className={styles.eduText}>- 인공지능, 데이터분석 교육 및 프로젝트</p>
+      <p className={styles.eduText}>- 인공지능, 데이터분석, Python 교육 및 프로젝트</p>
     </div>
   </div>
 </section>
@@ -211,32 +217,32 @@ const Main = () => {
           transition={{ duration: 1, ease: "easeOut" }}  // 1.5초 동안 부드럽게 나타나도록 설정
           className={styles.messageTitle}
         >
-  찾아봐주셔서 정말 감사합니다
-</motion.div>
+          찾아봐주셔서 정말 감사합니다
+        </motion.div>
 
-<motion.div
-  initial={{ opacity: 0, y: 50 }}  // 처음에는 안 보이고, 아래로 내려온 상태
-  whileInView={{ opacity: 1, y: 0 }} // 50% 이상 보일 때 애니메이션이 시작되어 부드럽게 올라가고 보임
-  viewport={{ once: false, amount: 0.5 }}  // 50% 이상 보였을 때 애니메이션이 시작됨
-  transition={{ duration: 1.5, ease: "easeOut" }}  // 1.5초 동안 부드럽게 나타나도록 설정
-  className={styles.messageSubtitle}
->
-  미래를 기대하게 만드는 개발자가 되겠습니다
-</motion.div>
-</div>
-<div className={styles.thankYouLetters}>
-  {letters.map((letter, index) => (
-    <motion.span
-      key={index}
-      initial={{ opacity: 0, y: 50 }}   // 각 글자가 처음에 조금 아래에 위치
-      animate={{ opacity: 1, y: 0 }}    // 애니메이션 시 위로 올라오며 보이게 됨
-      transition={{ delay: 2 + index * 0.2, duration: 1.5, ease: "easeOut" }} // 순차적으로 등장, 1.5초 동안
-      className={styles.letter}
-    >
-      {letter}
-    </motion.span>
-  ))}
-</div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}  // 처음에는 안 보이고, 아래로 내려온 상태
+          whileInView={{ opacity: 1, y: 0 }} // 50% 이상 보일 때 애니메이션이 시작되어 부드럽게 올라가고 보임
+          viewport={{ once: false, amount: 0.5 }}  // 50% 이상 보였을 때 애니메이션이 시작됨
+          transition={{ duration: 1.5, ease: "easeOut" }}  // 1.5초 동안 부드럽게 나타나도록 설정
+          className={styles.messageSubtitle}
+        > 
+          미래를 기대하게 만드는 개발자가 되겠습니다
+        </motion.div>
+      </div>
+      <div className={styles.thankYouLetters}>
+        {letters.map((letter, index) => (
+        <motion.span
+          key={index}
+          initial={{ opacity: 0, y: 50 }}   // 각 글자가 처음에 조금 아래에 위치
+          animate={{ opacity: 1, y: 0 }}    // 애니메이션 시 위로 올라오며 보이게 됨
+          transition={{ delay: 2 + index * 0.2, duration: 1.5, ease: "easeOut" }} // 순차적으로 등장, 1.5초 동안
+          className={styles.letter}
+          >
+          {letter}
+        </motion.span>
+        ))}
+      </div>
       <footer className={styles.footer}>
         2025. Lee Sumin. All rights reserved. <br />
         made by React

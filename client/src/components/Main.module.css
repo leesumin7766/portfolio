@@ -57,7 +57,7 @@
   background-position: center;
   display: flex;
   align-items: flex-start;
-  padding-left: 150px00px;
+  padding-left: 150px 00px;
   color: #D9D9D9;
   text-align: left;
 }
@@ -69,17 +69,24 @@
   margin-bottom: 20px;
 }
 
+.introText .highlightName {
+  color: #96e0fd; /* 원하는 색상 */
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
 .introText h2 {
   padding-left: 400px;
   font-size: 3rem;
   margin-bottom: 10px;
 }
 
-.introText p {
-  padding-top: 50px;
+.introText .introP {
+  color: #D9D9D9; /* 원하는 색상 */
   padding-left: 400px;
-  font-size: 1.5rem;
-  margin-top: 20px;
+  font-size: 1.2rem;
+  margin-top: 93px;
 }
 
 /* About Me 섹션 */
@@ -89,7 +96,7 @@
   align-items: flex-start; 
   padding: 100px 100px;
   background-color: #D9D9D9;
-  
+  margin-bottom : -90px;
 }
 
 .aboutRight {
@@ -309,7 +316,7 @@
 .education {
   padding-left: 410px; /* About Me의 왼쪽 간격 맞추기 */
   background-color: #d9d9d9;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 }
 
 .education h1 {
