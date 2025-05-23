@@ -33,7 +33,7 @@ const Main = () => {
        }}>
         <div className={styles.introText}>
           <h1>Introduction</h1>
-          <h2>안녕하세요<br/>백엔드 개발자 <span className={styles.highlightName}>이수민</span>입니다</h2><p></p>
+          <h2>안녕하세요<br/>IT 엔지니어<span className={styles.highlightName}>이수민</span>입니다</h2><p></p>
           <div className ={styles.introP}>
           <h4>다양한 툴을 능숙하게 다루는 개발자를 목표로 성장하고 있습니다<br></br>
             AI에 대한 깊은 관심을 바탕으로 데이터 분석과 머신러닝 기술을 프로젝트에 적용해왔습니다<br></br>
