@@ -81,14 +81,15 @@ const Main = () => {
         🗄️ <span className={styles.categoryDatabase}>Database</span> 
         <span className={styles.skillItem}>Oracle DB</span>
         <span className={styles.skillItem}>PostgreSQL</span>
+        <span className={styles.skillItem}>Maria DB</span>
       </li>
 
       <li className={styles.skillCategory4}>
         ⚙️ <span className={styles.categoryOthers}>Others</span> 
         <span className={styles.skillItem}>Git</span>
+        <span className={styles.skillItem}>Jira</span>
         <span className={styles.skillItem}>PyTorch</span>
         <span className={styles.skillItem}>Pandas</span>
-        <span className={styles.skillItem}>Jira</span>
       </li>
     </ul>
   </div>
@@ -100,7 +101,10 @@ const Main = () => {
 
   <div className={styles.projectCard}>
     <h2>Bible <span>온라인 도서관 서비스</span> <span>(25.02.03~25.02.14)</span></h2>
-    <p>도서 추천 시스템 풀스택 개발</p>
+    <p>ㆍVue3 기반 Fetch API를 활용하여 도서 추천 캐러셀 UI, 반응형 스타일링 적용</p>
+    <p>ㆍSpring Boot 기반 RESTful API를 설계하여 Flask 추천 엔진과의 연동을 위한 CRUD 구현</p>
+    <p>ㆍLitghFM 머신러닝 활용한 추천 시스템 설계</p>
+    <p>ㆍMockMvc와 JUnit을 활용한 Jacoco 커버리지 테스트 코드 작성</p>
     <p className={styles.tools}><i class="bi bi-tools"></i> Tools</p> 
     <p className={styles.projecttools}>Spring 3.4.1 / mybatis 3.0.4 / OracleDB 21 / vue.js 3.0 / JUNIT 5 / Tomcat 10.1 / git / flask 3.0.3 / LightFM</p>
     <p></p>
@@ -111,7 +115,9 @@ const Main = () => {
 
   <div className={styles.projectCard}>
     <h2>milgam <span>AI를 활용한 인파밀집 및 이상행동 검출 서비스</span> <span>(24.06.17~24.07.26)</span></h2>
-    <p>회원 관리자 로그인 백엔드 개발</p>
+    <p>ㆍSpring 기반 자체 암호화 로직과 세션을 활용한 관리자·사용자 구분 로그인 기능 구현</p>
+    <p>ㆍ서비스 전반 아키텍처 초안 설계 및 API 명세서 작성</p>
+    <p>ㆍJira를 활용한 팀원 간 일정 관리 및 업무 분담</p>
     <p className={styles.tools}><i class="bi bi-tools"></i> Tools</p> 
     <p className={styles.projecttools}>Spring 2.7.3 / java 11 / gradle / PostgreSQL / supabase 2.5.3 / flask 3.0.3 / numpy 1.26.4 / opencv 4.10.0</p>
     <p></p>
