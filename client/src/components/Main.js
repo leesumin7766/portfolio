@@ -99,9 +99,17 @@ const Main = () => {
 <section className={styles.projects} id="projects">
   <h1>Projects</h1>
   <div className={styles.projectCard}>
-    <h2>COCO <span>온라인 의류 상거래 중계 플랫폼</span> <span>(25.06.03~진행 중)</span></h2>
-    <p>ㆍSpring Boot 기반 RESTful API를 설계하여 상품, 거래, 사용자 관련 핵심 도메인 CRUD 구현</p>
-    <p>ㆍJWT 기반 로그인/회원가입 인증 로직 구현 및 카카오맵 API와 네이버 로그인 API 기능 적용</p>
+    <h2>COCO <span>온라인 의류 상거래 중계 플랫폼</span> <span>(25.06.03~25.08.18)</span></h2>
+    <p>solo project link <a 
+      href="http://3.37.52.16/" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className={styles.projectLink}
+    >
+      바로가기
+    </a></p>
+    <p>ㆍSpring Boot 기반 RESTful API설계, 결제 시스템 Toss페이 API 적용</p>
+    <p>ㆍJWT 기반 로그인/회원가입 인증 로직 구현 및 카카오맵 API 기능 적용</p>
     <p>ㆍReact 기반 프론트엔드에서 상품 목록 조회, 필터, 상세 조회, 주문 요청 기능 구현</p>
     <p>ㆍ@Async 비동기 처리로 인기 상품 요청 API의 TPS 향상 및 병목 해소</p>
     <p>ㆍRedis를 활용한 인기 상품 캐싱 및 주문량 폭주 대응 캐시 설계</p>
@@ -114,7 +122,7 @@ const Main = () => {
   </div>
   <div className={styles.projectCard}>
     <h2>Bible <span>온라인 도서관 서비스</span> <span>(25.02.03~25.02.14)</span></h2>
-    <p>ㆍSpring Boot 기반 RESTful API를 설계하여 Flask 추천 엔진과의 연동을 위한 CRUD 구현</p>
+    <p>ㆍSpring Boot 기반 RESTful API를 설계하여 Flask 도서 추천 모델과의 연동을 위한 CRUD 구현</p>
     <p>ㆍLitghFM 머신러닝 활용한 추천 시스템 설계</p>
     <p>ㆍVue3 기반 Fetch API를 활용하여 도서 추천 캐러셀 UI, 반응형 스타일링 적용</p>
     <p>ㆍMockMvc와 JUnit을 활용한 Jacoco 커버리지 테스트 코드 작성</p>
