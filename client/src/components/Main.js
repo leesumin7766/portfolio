@@ -33,9 +33,9 @@ const Main = () => {
        }}>
         <div className={styles.introText}>
           <h1>Introduction</h1>
-          <h2>안녕하세요<br/>IT 엔지니어<span className={styles.highlightName}>이수민</span>입니다</h2><p></p>
+          <h2>안녕하세요<br/>백엔드 개발자<span className={styles.highlightName}>이수민</span>입니다</h2><p></p>
           <div className ={styles.introP}>
-          <h4>다양한 툴을 능숙하게 다루는 개발자를 목표로 성장하고 있습니다<br></br>
+          <h4>Spring 백엔드 개발자를 목표로 성장하고 있습니다<br></br>
             AI에 대한 깊은 관심을 바탕으로 데이터 분석과 머신러닝 기술을 프로젝트에 적용해왔습니다<br></br>
           끊임없는 도전과 협업을 통해 다양한 프로젝트를 경험하며 성취감을 얻습니다</h4>
           </div>
@@ -48,7 +48,14 @@ const Main = () => {
           <h1>ABOUT ME</h1>
           <ul>
             <li>👤 LEE SUMIN  ✉️ hojun7766@naver.com</li>
-            <li>🎂 98.05.10  🏫 <span className={styles.koreanFont}>인천대학교 정보통신공학과</span></li>
+            <li>🎂 98.05.10  🏫 <span className={styles.koreanFont}>인천대학교 정보통신공학과 졸업</span></li>
+            <li><a
+              href="https://github.com/leesumin7766" // 👉 여기에 본인 GitHub 링크
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.githubLink}>
+            <i className="bi bi-github"></i> Git Link</a>
+          </li>
           </ul>
         </div>
         <div className={styles.aboutRight}>
@@ -69,9 +76,9 @@ const Main = () => {
 
           <li className={styles.skillCategory2}>
               🛠️ <span className={styles.categoryBack}>Back-end</span> 
-                  <span className={styles.skillItem}>Python</span>
                   <span className={styles.skillItem}>Java</span>
                   <span className={styles.skillItem}>Spring</span>
+                  <span className={styles.skillItem}>Python</span>
                   <span className={styles.skillItem}>Flask</span>
         <span className={styles.skillItem}>JPA</span>
         <span className={styles.skillItem}>MyBatis</span>
@@ -86,10 +93,10 @@ const Main = () => {
 
       <li className={styles.skillCategory4}>
         ⚙️ <span className={styles.categoryOthers}>Others</span> 
-        <span className={styles.skillItem}>Git</span>
+        <span className={styles.skillItem}>GitAction</span>
         <span className={styles.skillItem}>Jira</span>
-        <span className={styles.skillItem}>PyTorch</span>
-        <span className={styles.skillItem}>Pandas</span>
+        <span className={styles.skillItem}>Docker</span>
+        <span className={styles.skillItem}>AWS</span>
       </li>
     </ul>
   </div>
@@ -98,6 +105,20 @@ const Main = () => {
 
 <section className={styles.projects} id="projects">
   <h1>Projects</h1>
+  <div className={styles.projectCard}>
+    <h2>DingDong <span>온라인 배달 음식 주문 관리 플랫폼</span> <span>(25.09.26~25.10.18)</span></h2>
+    <p>ㆍ회원 인증,인가 기능 및 주문 로직 구현 담당</p>
+    <p>ㆍJWT 기반 인증과 Spring Security를 적용해 권한(Role)별 접근 제어, 보안성을 강화</p>
+    <p>ㆍ주문 생성, 결제, 취소 등 상태 변경 작업을 <strong>@Transactional</strong> 단위로 관리하여 데이터 일관성을 보장</p>
+    <p>ㆍJPA 연관관계 매핑과 예외 중심 도메인 로직 설계</p>
+    <p>ㆍ상태 변경 이력을 별도로 저장하여 주문 흐름을 추적 할 수 있도록 설계</p>
+    <p className={styles.tools}><i class="bi bi-tools"></i> Tools</p> 
+    <p className={styles.projecttools}>Spring 3.1.0 / Java 17 / PostgreSQL / JPA / OAuth2 / Redis</p>
+    <p></p>
+    <a href="https://github.com/leesumin7766/coco" target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
+      <i className="bi bi-github"></i>
+    </a>
+  </div>
   <div className={styles.projectCard}>
     <h2>COCO <span>온라인 의류 상거래 중계 플랫폼</span> <span>(25.06.03~25.08.18)</span></h2>
     <p>solo project link <a 
@@ -151,6 +172,15 @@ const Main = () => {
       
 <section className={styles.education} id="education">
   <h1>Education</h1>
+  
+  <div className={styles.educationItem}>
+    <img src="/assets/images6.png" alt="Sparta Logo" />
+    <div>
+      <span className={styles.eng}>JAVA 단기심화 (스파르타코딩클럽)</span> 
+      <p className={styles.dateTime}>(2025.09.15 - 2025.12.31) <strong>480Hours</strong></p>
+      <p className={styles.eduText}>- Spring 기반 AI 활용 프로젝트</p>
+    </div>
+  </div>
 
   <div className={styles.educationItem}>
     <img src="/assets/screen5.png" alt="KOSA Logo" />
