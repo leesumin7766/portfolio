@@ -35,9 +35,10 @@ const Main = () => {
           <h1>Introduction</h1>
           <h2>안녕하세요<br/>백엔드 개발자<span className={styles.highlightName}>이수민</span>입니다</h2><p></p>
           <div className ={styles.introP}>
-          <h4>Spring 백엔드 개발자를 목표로 성장하고 있습니다<br></br>
-            AI에 대한 깊은 관심을 바탕으로 데이터 분석과 머신러닝 기술을 프로젝트에 적용해왔습니다<br></br>
-          끊임없는 도전과 협업을 통해 다양한 프로젝트를 경험하며 성취감을 얻습니다</h4>
+          <h4>Spring 백엔드 개발자를 목표로 꾸준히 성장하고 있습니다<br></br>
+          끊임없는 도전과 열정적인 협업을 통해 다양한 프로젝트를 경험하며 성취감을 얻습니다<br></br>
+            또한 AI에 대한 깊은 관심을 바탕으로 데이터 분석과 머신러닝 기술을 프로젝트에 적용해왔습니다<br></br>
+          </h4>
           </div>
         </div>
       </section>
@@ -46,16 +47,32 @@ const Main = () => {
       <section className={styles.aboutMe} id="aboutme">
         <div className={styles.aboutLeft}>
           <h1>ABOUT ME</h1>
-          <ul>
-            <li>👤 LEE SUMIN  ✉️ hojun7766@naver.com</li>
-            <li>🎂 98.05.10  🏫 <span className={styles.koreanFont}>인천대학교 정보통신공학과 졸업</span></li>
+          <ul className={styles.aboutList}>
+            <li className={styles.aboutItemTop}>
+              👤 LEE SUMIN  ✉️ hojun7766@naver.com
+            </li>
+            <li className={styles.aboutItemMiddle}>
+              🎂 98.05.10  🏫 <span className={styles.koreanFont}>인천대학교 정보통신공학과 졸업</span>
+            </li>
+            <ul className={styles.linkList}>
             <li><a
-              href="https://github.com/leesumin7766" // 👉 여기에 본인 GitHub 링크
+              href="https://github.com/leesumin7766" 
               target="_blank"
               rel="noopener noreferrer"
               className={styles.githubLink}>
-            <i className="bi bi-github"></i> Git Link</a>
+            <i className="bi bi-github"></i> GitHub Link</a>
           </li>
+          <li>
+            <a
+              href="https://hojun7766.tistory.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.blogLink}
+            ><i className="bi bi-link-45deg"></i>
+              Blog Link
+            </a>
+          </li>
+          </ul>
           </ul>
         </div>
         <div className={styles.aboutRight}>
@@ -71,7 +88,6 @@ const Main = () => {
               💻 <span className={styles.categoryFront}>Front-end</span> 
                   <span className={styles.skillItem}>Vue.js</span>
                   <span className={styles.skillItem}>React</span>
-                  <span className={styles.skillItem}>Next.js</span>
               </li>
 
           <li className={styles.skillCategory2}>
@@ -79,9 +95,7 @@ const Main = () => {
                   <span className={styles.skillItem}>Java</span>
                   <span className={styles.skillItem}>Spring</span>
                   <span className={styles.skillItem}>Python</span>
-                  <span className={styles.skillItem}>Flask</span>
         <span className={styles.skillItem}>JPA</span>
-        <span className={styles.skillItem}>MyBatis</span>
       </li>
 
       <li className={styles.skillCategory3}>
@@ -106,6 +120,22 @@ const Main = () => {
 <section className={styles.projects} id="projects">
   <h1>Projects</h1>
   <div className={styles.projectCard}>
+    <h2>TeamMyung <span>MSA 기반 B2B 물류 관리 및 배송 프로젝트</span> <span>(25.10.31~25.11.14)</span></h2>
+    <p>ㆍ상품 및 주문 로직 구현</p>
+    <p>ㆍFeign Client기반 서비스 통신 구현</p>
+    <p>ㆍQueryDSL 기반 상품 검색/필터링 기능</p>
+    <p>ㆍOptimistic Lock 기반 재고 감소 트랜잭션</p>
+    <p>ㆍKafka 기반 비동기 이벤트 발행 및 Outbox 패턴 기반 이벤트 일관성 보장</p>
+    <p>ㆍZipkin 서비스 간 분산 추적</p>
+    <p>ㆍSwagger API 문서화</p>
+    <p className={styles.tools}><i class="bi bi-tools"></i> Tools</p> 
+    <p className={styles.projecttools}>Spring 3.5.6 / Java 17 / PostgreSQL / Spring Cloud (Eureka, OpenFeign) / JPA / Kafka / Zipkin / Swagger</p>
+    <p></p>
+    <a href="https://github.com/leesumin7766/MSA" target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
+      <i className="bi bi-github"></i>
+    </a>
+  </div>
+  <div className={styles.projectCard}>
     <h2>DingDong <span>온라인 배달 음식 주문 관리 플랫폼</span> <span>(25.09.26~25.10.18)</span></h2>
     <p>ㆍ회원 인증,인가 기능 및 주문 로직 구현 담당</p>
     <p>ㆍJWT 기반 인증과 Spring Security를 적용해 권한(Role)별 접근 제어, 보안성을 강화</p>
@@ -115,7 +145,7 @@ const Main = () => {
     <p className={styles.tools}><i class="bi bi-tools"></i> Tools</p> 
     <p className={styles.projecttools}>Spring 3.1.0 / Java 17 / PostgreSQL / JPA / OAuth2 / Redis</p>
     <p></p>
-    <a href="https://github.com/leesumin7766/coco" target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
+    <a href="https://github.com/dding-dong/dingdong" target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
       <i className="bi bi-github"></i>
     </a>
   </div>

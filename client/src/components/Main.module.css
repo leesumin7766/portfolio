@@ -138,6 +138,41 @@
   font-size: 1.5rem; /* 한글 폰트 크기 조정 */
 }
 
+.aboutList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* ← 여기 값만 조절하면 줄 간격이 전체적으로 좋아짐 */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.aboutItemTop {
+  margin-bottom: 12px; /* 원하면 4px ~ 12px 사이 조절 */
+}
+
+/* 두 번째 줄 간격 */
+.aboutItemMiddle {
+  margin-bottom: 12px; /* 여기를 더 넉넉하게 */
+}
+
+.linkList {
+  display: flex;
+  gap: 50px; /* 원하는 간격 조절 */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.githubLink {
+  color: black;
+  font-weight: 600; /* 선택: 조금 더 강조하고 싶으면 */
+}
+
+.blogLink {
+  color: black;
+  font-weight: 600; /* 선택: 조금 더 강조하고 싶으면 */
+}
 
 
 /* Skills 섹션 */
