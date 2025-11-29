@@ -162,8 +162,8 @@ const Main = () => {
     <p>ㆍSpring Boot 기반 RESTful API설계, 결제 시스템 Toss페이 API 적용</p>
     <p>ㆍJWT 기반 로그인/회원가입 인증 로직 구현 및 카카오맵 API 기능 적용</p>
     <p>ㆍReact 기반 프론트엔드에서 상품 목록 조회, 필터, 상세 조회, 주문 요청 기능 구현</p>
-    <p>ㆍ@Async 비동기 처리로 인기 상품 요청 API의 TPS 향상 및 병목 해소</p>
-    <p>ㆍRedis를 활용한 인기 상품 캐싱 및 주문량 폭주 대응 캐시 설계</p>
+    <p>ㆍHikariCP 커넥션 풀 최적화로 DB 연결 성능 30% 향상</p>
+    <p>ㆍRedis 캐싱 전략 도입으로 인기 상품 조회 API 응답속도 80% 개선</p>
     <p className={styles.tools}><i class="bi bi-tools"></i> Tools</p> 
     <p className={styles.projecttools}>Spring 3.5.3 / Java 21 / MariaDB / JPA / React 19.1.0 / OAuth2 / DBeaver25.1.2 / Redis</p>
     <p></p>
