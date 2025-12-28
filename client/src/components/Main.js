@@ -122,10 +122,10 @@ const Main = () => {
   <div className={styles.projectCard}>
     <h2>PoppopJubjub <span>MSA 기반 온라인 팝업스토어 예약 플랫폼</span> <span>(25.11.24~25.12.26)</span></h2>
     <p>ㆍ리뷰 서비스 단독 설계 및 구현 (리뷰 생성·조회·삭제)</p>
-    <p>ㆍKafka 기반 리뷰 이벤트 발행으로 서비스 간 결합도 최소화</p>
-    <p>ㆍ리뷰 블라인드 처리 시 스토어 평점 자동 반영 로직 구현</p>
-    <p>ㆍAI 서비스 연동을 통한 리뷰 악성/비속어 탐지 및 자동 블라인드 처리</p>
-    <p>ㆍFeign Client 기반 Review ↔ AI 서비스 간 동기 통신 구현</p>
+    <p>ㆍ예약-리뷰-스토어 Feign기반 동기 통신 구현</p>
+    <p>ㆍ리뷰 블라인드 처리 시 스토어 평점 자동 반영 도메인 로직 구현</p>
+    <p>ㆍGemini API 프롬프트 설계를 통한 리뷰 악성/비속어 탐지 및 자동 블라인드 처리</p>
+    <p>ㆍKafka 기반 리뷰 이벤트 발행으로 AI 서비스 간 비동기 통신 구현</p>
     <p>ㆍAWS EC2 · RDS · S3 기반 서비스 배포 및 운영 환경 구성</p>
     <p>ㆍGitHub Actions 기반 CI/CD 파이프라인 구축</p>
     <p className={styles.tools}><i class="bi bi-tools"></i> Tools</p> 
@@ -166,7 +166,7 @@ const Main = () => {
     </a>
   </div>
   <div className={styles.projectCard}>
-    <h2>COCO <span>온라인 의류 상거래 중계 플랫폼</span> <span>(25.06.03~25.08.18)</span></h2>
+    <h2>COCO <span>온라인 의류 상거래 중개 플랫폼</span> <span>(25.06.03~25.08.18)</span></h2>
     <p>solo project link <a 
       href="http://3.37.52.16/" 
       target="_blank" 
