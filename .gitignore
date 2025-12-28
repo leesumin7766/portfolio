@@ -1,2 +1,4 @@
 Oracle_JDK-21.jdk/
 node_modules/
+.next
+.env
