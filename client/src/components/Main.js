@@ -120,6 +120,22 @@ const Main = () => {
 <section className={styles.projects} id="projects">
   <h1>Projects</h1>
   <div className={styles.projectCard}>
+    <h2>PoppopJubjub <span>MSA 기반 온라인 팝업스토어 예약 플랫폼</span> <span>(25.11.24~25.12.26)</span></h2>
+    <p>ㆍ리뷰 서비스 단독 설계 및 구현 (리뷰 생성·조회·삭제)</p>
+    <p>ㆍKafka 기반 리뷰 이벤트 발행으로 서비스 간 결합도 최소화</p>
+    <p>ㆍ리뷰 블라인드 처리 시 스토어 평점 자동 반영 로직 구현</p>
+    <p>ㆍAI 서비스 연동을 통한 리뷰 악성/비속어 탐지 및 자동 블라인드 처리</p>
+    <p>ㆍFeign Client 기반 Review ↔ AI 서비스 간 동기 통신 구현</p>
+    <p>ㆍAWS EC2 · RDS · S3 기반 서비스 배포 및 운영 환경 구성</p>
+    <p>ㆍGitHub Actions 기반 CI/CD 파이프라인 구축</p>
+    <p className={styles.tools}><i class="bi bi-tools"></i> Tools</p> 
+    <p className={styles.projecttools}>Spring 3.5.8 / Java 17 / PostgreSQL / Spring Cloud (Eureka, OpenFeign) / Kafka / S3 / EC2 / GitHub Actions</p>
+    <p></p>
+    <a href="https://github.com/orgs/PoppopJubjub/repositories" target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
+      <i className="bi bi-github"></i>
+    </a>
+  </div>
+  <div className={styles.projectCard}>
     <h2>TeamMyung <span>MSA 기반 B2B 물류 관리 및 배송 프로젝트</span> <span>(25.10.31~25.11.14)</span></h2>
     <p>ㆍ상품 및 주문 로직 구현</p>
     <p>ㆍFeign Client기반 서비스 통신 구현</p>
@@ -131,7 +147,7 @@ const Main = () => {
     <p className={styles.tools}><i class="bi bi-tools"></i> Tools</p> 
     <p className={styles.projecttools}>Spring 3.5.6 / Java 17 / PostgreSQL / Spring Cloud (Eureka, OpenFeign) / JPA / Kafka / Zipkin / Swagger</p>
     <p></p>
-    <a href="https://github.com/leesumin7766/MSA" target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
+    <a href="https://github.com/TeamMyung" target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
       <i className="bi bi-github"></i>
     </a>
   </div>
