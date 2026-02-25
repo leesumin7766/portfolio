@@ -166,7 +166,7 @@ const Main = () => {
     </a>
   </div>
   <div className={styles.projectCard}>
-    <h2>COCO <span>온라인 의류 상거래 중개 플랫폼</span> <span>(25.06.03~25.08.18)</span></h2>
+    <h2>COCO <span>리셀 스니커즈 중개 거래 플랫폼</span> <span>(25.06.03~25.08.18)</span></h2>
     <p>solo project link <a 
       href="http://3.37.52.16/" 
       target="_blank" 
@@ -175,13 +175,17 @@ const Main = () => {
     >
       바로가기
     </a></p>
-    <p>ㆍSpring Boot 기반 RESTful API설계, 결제 시스템 Toss페이 API 적용</p>
-    <p>ㆍJWT 기반 로그인/회원가입 인증 로직 구현 및 카카오맵 API 기능 적용</p>
-    <p>ㆍReact 기반 프론트엔드에서 상품 목록 조회, 필터, 상세 조회, 주문 요청 기능 구현</p>
-    <p>ㆍHikariCP 커넥션 풀 최적화로 DB 연결 성능 30% 향상</p>
-    <p>ㆍRedis 캐싱 전략 도입으로 인기 상품 조회 API 응답속도 80% 개선</p>
+    <p>ㆍSpring Boot(Backend)와 React(Frontend)를 분리한 중개 거래 웹 서비스 구조 구현</p>
+    <p>ㆍJWT 기반 인증 세션과 Redis 토큰 블랙리스트를 적용한 로그인/회원가입 로직 구현</p>
+    <p>ㆍ상품 검색/상세 및 사이즈별 호가(최저 판매가·최고 구매가) 조회 기능 구현</p>
+    <p>ㆍ구매/판매 입찰 등록 시 가격 조건 기반 즉시 매칭 및 주문 생성 프로세스 구현</p>
+    <p>ㆍToss Payments 결제 준비/승인 API 연동 및 마이페이지(주문/입찰/위시리스트/등록 상품) 조회 기능 구현</p>
+    <p>ㆍ슬로우 쿼리 분석 기반 인덱스/조회 쿼리 개선으로 DB 응답 성능 최적화</p>
+    <p>ㆍRedis @Cacheable 적용으로 인기 상품 조회 API p95 응답시간 약 45% 개선</p>
+    <p>ㆍAWS EC2(Load, SUT) 2대 서버를 운영하며 k6 부하 테스트로 API TPS, 응답시간(p95), 에러율 측정</p>
+    <p>ㆍPrometheus/Grafana/Loki로 운영 환경 모니터링 및 GitHub Actions CI/CD 배포 파이프라인 운영</p>
     <p className={styles.tools}><i class="bi bi-tools"></i> Tools</p> 
-    <p className={styles.projecttools}>Spring 3.5.3 / Java 21 / MariaDB / JPA / React 19.1.0 / OAuth2 / DBeaver25.1.2 / Redis</p>
+    <p className={styles.projecttools}>Java 21 / Spring Boot 3.5.3 / Spring Security / JPA / React 19.1.0 / MariaDB 10.6 / Redis 7 / Docker / Prometheus / Grafana / Loki / GitHub Actions / AWS EC2</p>
     <p></p>
     <a href="https://github.com/leesumin7766/coco" target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
       <i className="bi bi-github"></i>
