@@ -100,16 +100,16 @@ const Main = () => {
 
       <li className={styles.skillCategory3}>
         🗄️ <span className={styles.categoryDatabase}>Database</span> 
-        <span className={styles.skillItem}>Oracle DB</span>
+        <span className={styles.skillItem}>MySQL</span>
         <span className={styles.skillItem}>PostgreSQL</span>
-        <span className={styles.skillItem}>Maria DB</span>
+        <span className={styles.skillItem}>Oracle DB</span>
       </li>
 
       <li className={styles.skillCategory4}>
         ⚙️ <span className={styles.categoryOthers}>Others</span> 
+        <span className={styles.skillItem}>Docker</span>
         <span className={styles.skillItem}>GitAction</span>
         <span className={styles.skillItem}>Jira</span>
-        <span className={styles.skillItem}>Docker</span>
         <span className={styles.skillItem}>AWS</span>
       </li>
     </ul>
@@ -177,9 +177,8 @@ const Main = () => {
     </a></p>
     <p>ㆍSpring Boot(Backend)와 React(Frontend)를 분리한 중개 거래 웹 서비스 구조 구현</p>
     <p>ㆍJWT 기반 인증 세션과 Redis 토큰 블랙리스트를 적용한 로그인/회원가입 로직 구현</p>
-    <p>ㆍ상품 검색/상세 및 사이즈별 호가(최저 판매가·최고 구매가) 조회 기능 구현</p>
-    <p>ㆍ구매/판매 입찰 등록 시 가격 조건 기반 즉시 매칭 및 주문 생성 프로세스 구현</p>
-    <p>ㆍToss Payments 결제 준비/승인 API 연동 및 마이페이지(주문/입찰/위시리스트/등록 상품) 조회 기능 구현</p>
+    <p>ㆍ상품 검색/상세 및 구매/판매 입찰 즉시 매칭 프로세스 구현</p>
+    <p>ㆍToss Payments 결제 준비/승인 API 연동 및 마이페이지 조회 기능 구현</p>
     <p>ㆍ슬로우 쿼리 분석 기반 인덱스/조회 쿼리 개선으로 DB 응답 성능 최적화</p>
     <p>ㆍRedis @Cacheable 적용으로 인기 상품 조회 API p95 응답시간 약 45% 개선</p>
     <p>ㆍAWS EC2(Load, SUT) 2대 서버를 운영하며 k6 부하 테스트로 API TPS, 응답시간(p95), 에러율 측정</p>
