@@ -28,16 +28,16 @@ const Main = () => {
       </header>
 
       {/* Main Background */}
-      <section className={styles.intro} style={{ backgroundImage: "url('/assets/screen1.png'), linear-gradient(rgba(0, 0, 255, 0.05), rgba(0, 0, 255, 0.05))",
+      <section className={styles.intro} style={{ backgroundImage: "url('/assets/screen1.png'), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))",
         backgroundBlendMode: "darken",
+        backgroundPosition: "center calc(50% + 50%)",
        }}>
         <div className={styles.introText}>
           <h1>Introduction</h1>
-          <h2>안녕하세요<br/>백엔드 개발자<span className={styles.highlightName}>이수민</span>입니다</h2><p></p>
+          <h2>안녕하세요<br/>AX 혁신을 만들어가는<span className={styles.highlightName}>이수민</span>입니다</h2><p></p>
           <div className ={styles.introP}>
-          <h4>Spring 백엔드 개발자를 목표로 꾸준히 성장하고 있습니다<br></br>
-          끊임없는 도전과 열정적인 협업을 통해 다양한 프로젝트를 경험하며 성취감을 얻습니다<br></br>
-            또한 AI에 대한 깊은 관심을 바탕으로 데이터 분석과 머신러닝 기술을 프로젝트에 적용해왔습니다<br></br>
+          <h4>체계적인 품질 검증과 꾸준한 학습을 통해 QA 역량을 발전시키고 있습니다<br></br>
+          AI 기술에 대한 이해와 도전을 바탕으로 AX 확산에 기여하고자 성장하고 있습니다<br></br>
           </h4>
           </div>
         </div>
@@ -53,6 +53,9 @@ const Main = () => {
             </li>
             <li className={styles.aboutItemMiddle}>
               🎂 98.05.10  🏫 <span className={styles.koreanFont}>인천대학교 정보통신공학과 졸업</span>
+            </li>
+            <li className={styles.aboutItemBottom}>
+              💼 <span className={styles.koreanFont}>한국정보통신기술협회(TTA) AX확산단 재직</span>
             </li>
             <ul className={styles.linkList}>
             <li><a
@@ -119,6 +122,21 @@ const Main = () => {
 
 <section className={styles.projects} id="projects">
   <h1>Projects</h1>
+  <div className={styles.projectCard}>
+    <h2>autoTest <span>AI 기반 웹 서비스 QA 테스트 자동화 플랫폼</span> <span>(26.10.01~)</span></h2>
+    <p>ㆍ시험 수행 문서 기반 사전 점검 및 TypeSafe Jev 검증</p>
+    <p>ㆍPlaywright와 프롬프트 기반 웹 화면 수집 및 메뉴트리 산출</p>
+    <p>ㆍ프로그램 코드와 버전 관리 템플릿 기반 테스트 케이스(TC) 산출</p>
+    <p>ㆍ로컬 LLM(Qwen) 기반 TC별 테스트 수행 계획 생성 및 자동 실행</p>
+    <p>ㆍ(예정) 결함 검토 및 재시험까지 연계한 QA 자동화 워크플로 구성</p>
+    <p className={styles.tools}><i className="bi bi-tools"></i> Tools</p> 
+    <p className={styles.projecttools}>React / TypeScript / Vite / Java / Spring Boot / Python / FastAPI / Playwright / Qwen / TypeSafe Jev / PostgreSQL / Docker</p>
+    <p></p>
+    <a href="https://github.com/leesumin7766/autoTest" target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
+      <i className="bi bi-github"></i>
+    </a>
+  </div>
+
   <div className={styles.projectCard}>
     <h2>PoppopJubjub <span>MSA 기반 온라인 팝업스토어 예약 플랫폼</span> <span>(25.11.24~25.12.26)</span></h2>
     <p>ㆍ리뷰 서비스 단독 설계 및 구현 (리뷰 생성·조회·삭제)</p>
